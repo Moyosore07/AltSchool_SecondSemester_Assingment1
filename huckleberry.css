@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+ 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffa500;
+  }
+  
+ 
+  .hero {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #000;
+  }
+  
+  .hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .hero .highlight {
+    color: #008000;
+    font-weight: bold;
+  }
+  
+  
+  .content {
+    padding: 2rem;
+    background-color: #666666;
+    ;
+  }
+  
+  .content-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .card-header {
+    position: absolute;
+    top: 8px;
+    left: -10px; 
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-box p {
+    margin-top: 1.5rem;
+    line-height: 1.8;
+  }
+  
+  
+  footer {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+  }
+  
+  .back-to-top {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-to-top:hover {
+    background-color: #ffa500;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .content-box {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .content-box {
+      padding: 0.8rem;
+    }
+  }
+  
